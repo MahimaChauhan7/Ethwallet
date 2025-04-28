@@ -4,6 +4,10 @@ import { NodeModulesPolyfillPlugin } from '@esbuild-plugins/node-modules-polyfil
 import rollupNodePolyFill from 'rollup-plugin-node-polyfills';
 
 export default defineConfig({
+  server: {
+    host: '0.0.0.0',
+    
+  },
   plugins: [
     // Ensure Vite is working with Vue or other frameworks
     // Add the plugin for Vue or your framework as needed
