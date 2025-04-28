@@ -8,6 +8,9 @@ export default defineConfig({
     host: '0.0.0.0',
     
   },
+  preview: {
+    allowedHosts: ['ethwallet-8amx.onrender.com']
+  }, 
   plugins: [
     // Ensure Vite is working with Vue or other frameworks
     // Add the plugin for Vue or your framework as needed
