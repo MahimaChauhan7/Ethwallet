@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Webom</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div>
+            <img src="670d48e5d7171705c66af68c_Vector.png" alt="Logo" class="logo">
+        </div>
+        <div>
+            <h2 style="font-family: 'Rounded Mplus', sans-serif; color: aliceblue;">
+                Webom
+            </h2>
+        </div>
+    </div>
+
+    <div class="containofbox">
+        <div class="jRCpGt">
+            <div class="mar">
+                <img src="670d48e5d7171705c66af68c_Vector.png" alt="Logo" class="logo">
+                <h2 style="font-family: 'Rounded Mplus', sans-serif; color: aliceblue;">
+                    Webom 
+                </h2>
+                <h6 style="font-family: 'Rounded Mplus', sans-serif; color: aliceblue;"> Made by Mahima Chauhan</h6>
+            </div>
+            <div class="wallet">
+                <div id = "bt" class="createaccount">
+                    <button id="createWalletBtn" type="button" onclick="deleteit('bt')">Create new account</button>
+          
+                </div>
+                <div id="mnemonicContainer" class="hidden">
+                    <h2 style="font-family: 'Rounded Mplus', sans-serif; color: #eae3ebac;" >Save your 12-word phrase!</h2>
+                    <p id="mnemonic"></p> <!-- This is where the mnemonic will be displayed -->
+                    <button id = "save" >Saved</button>
+                </div>
+                <div id ="Account" class="hidden">
+                    <button>Add Account</button>
+
+                </div>
+                
+                
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Load ethers.js UMD from jsDelivr -->
+    <script src="https://cdn.jsdelivr.net/npm/ethers@5.7.2/dist/ethers.umd.min.js"></script>
+
+    
+
+
+
+   
+
+<!-- 2) Then load your own script (plain, not type="module") -->
+    <script src="./index.js"></script>
+    <script>
+        function deleteit(id) {
+          const el = document.getElementById(id);
+          if (el) el.remove();
+        }
+      </script>
+   
+    
+
+
+    
+</body>
+</html>
